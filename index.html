@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0e1313" />
+  <link rel="manifest" href="./manifest.json">
+  <link rel="shortcut icon" href="./public/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="./public/apple-touch-icon.png">
+
+  <title id="title">SoundSculpt</title>
+
+  <!-- Import CSS File -->
+  <link rel="stylesheet" href="./CSS/style.css">
+  <link rel="stylesheet" href="./CSS/responsive.css">
+
+  <!-- Import Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body onload="preLoader()">
+
+  <div id="loading"></div>
+
+  <!-- Go to Up button -->
+  <button onclick="topFunction()" id="moveTopBtn" title="Go to top"><i class="fas fa-angle-up"></i></button>
+
+  <!-- Navbar  -->
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo"><a href="#">SoundSculpt</a></div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="#play">Play Song</a></li>
+        <li><a href="#songs">Choose Song</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <div class="banner"></div>
+
+  <!-- PLAY PAGE -->
+  <section class="play" id="play">
+    <div class="container">
+      <div class="card">
+        <div class="card-body">
+          <div class="row">
+            <div class="left-col">
+              <h1 id="songName"> man mera </h1>
+              <h5>~<em id="songBy">Lauv</em></h5>
+            </div>
+            <div class="right-col">
+              <img src="./assets/Image/play.png" alt="play-button" id="icon">
+              <p>Click Here To Listen</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <audio id="song">
+        <source src="./assets/Songs/manmera.mp3" type="audio/mp3">
+      </audio>
+    </div>
+  </section>
+
+  <!-- SELECT SONGS -->
+  <section class="songs" id="songs">
+    <div class="container">
+      <div class="songs-header">
+        <h2 class="title">Choose a song !!</h2>
+        <a class="play-song-btn" href="#play">Play Song</a>
+      </div>
+      <div class="btn-group">
+        <button type="button" class="btn"> Khoya Sa</button>
+        <button type="button" class="btn">manmera</button>
+        <button type="button" class="btn">Mazaak</button>
+        <button type="button" class="btn">Betty (Get Money)</button>
+        <button type="button" class="btn">Mary On A Cross</button>
+        <button type="button" class="btn">Baaraat</button>
+        <button type="button" class="btn">Ishq Bulaava</button>
+        <button type="button" class="btn">Katputli ke Dhage</button>
+        <button type="button" class="btn">Tu/You</button>
+        <button type="button" class="btn">Har Ek Pal</button>
+        <button type="button" class="btn">Chand Baliyan</button>
+        <button type="button" class="btn">naach re patarki</button>
+        <button type="button" class="btn">HookahBar</button>
+        <button type="button" class="btn">chamakchallo</button>
+        <button type="button" class="btn">Satisfya</button>
+        <button type="button" class="btn">CheezBadi</button>
+        <button type="button" class="btn">AajaWeMahiya</button>
+        <button type="button" class="btn">Dilbar</button>
+        <button type="button" class="btn">KusuKusu</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-header">
+        <h2 class="title">About Song !!</h2>
+      </div>
+      <div class="about-content">
+        <div>
+          <p id="aboutSong">
+            "man mera" is a song recorded by American singer-songwriter gajendra verma. It was released on
+            May 19, 2017, and is included on Gajendra's compilation album I Met You When I Was 18, which was
+            released on May 31, 2018. It has also been used in an Android Auto app commercial, in the
+            trailer of Netflix's romantic comedy To All the Boys I've Loved Before, and in the fall ball
+            episode of Netflix's comedy series The Expanding Universe of Ashley Garcia.
+          </p>
+          <a class="download-song" href="./assets/Songs/manmera.mp3" id="download" download="manmera.mp3">
+            Download Song
+          </a>
+        </div>
+        <div class="image-container">
+          <img src="./assets/Image/manmera.png" alt="song-banner" id="banner">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-header">
+        <h2 class="title">About Song !!</h2>
+      </div>
+      <div class="about-content">
+        <div>
+          <p id="aboutSong">
+            "Hookah Bar" is a song recorded by American singer-songwriter himesh rasmiya
+          </p>
+          <a class="download-song" href="./assets/Songs/HookahBar.mp3" id="download" download="Hookah Bar.mp3">
+            Download Song
+          </a>
+          
+        </div>
+        <div class="image-container">
+          <img src="./assets/Image/HookahBar.jpg" alt="song-banner" id="banner">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-header">
+        <h2 class="title">About Song !!</h2>
+      </div>
+      <div class="about-content">
+        <div>
+          <p id="aboutSong">
+            "chamakchallo" is a song recorded by American singer-songwriter himesh rasmiya
+          </p>
+          <a class="download-song" href="./assets/Songs/chamakchallo.mp3" id="download" download="chamakchallo.mp3">
+            Download Song
+          </a>
+          
+        </div>
+        <div class="image-container">
+          <img src="./assets/Image/chamakchallo.jpg" alt="song-banner" id="banner">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-header">
+        <h2 class="title">About Song !!</h2>
+      </div>
+      <div class="about-content">
+        <div>
+          <p id="aboutSong">
+            "Satisfya" is a song recorded by American singer-songwriter himesh rasmiya
+          </p>
+          <a class="download-song" href="./assets/Songs/Satisfya.mp3" id="download" download="Satisfya.mp3">
+            Download Song
+          </a>
+          
+        </div>
+        <div class="image-container">
+          <img src="./assets/Image/Satisfya.jpg" alt="song-banner" id="banner">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-header">
+        <h2 class="title">About Song !!</h2>
+      </div>
+      <div class="about-content">
+        <div>
+          <p id="aboutSong">
+            "CheezBadi" is a song recorded by American singer-songwriter himesh rasmiya
+          </p>
+          <a class="download-song" href="./assets/Songs/CheezBadi.mp3" id="download" download="CheezBadi.mp3">
+            Download Song
+          </a>
+          
+        </div>
+        <div class="image-container">
+          <img src="./assets/Image/CheezBadi.jpg" alt="song-banner" id="banner">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-header">
+        <h2 class="title">About Song !!</h2>
+      </div>
+      <div class="about-content">
+        <div>
+          <p id="aboutSong">
+            "AajaWeMahiya" is a song recorded by American singer-songwriter himesh rasmiya
+          </p>
+          <a class="download-song" href="./assets/Songs/AajaWeMahiya.mp3" id="download" download="AajaWeMahiya.mp3">
+            Download Song
+          </a>
+          
+        </div>
+        <div class="image-container">
+          <img src="./assets/Image/AajaWeMahiya.jpg" alt="song-banner" id="banner">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-header">
+        <h2 class="title">About Song !!</h2>
+      </div>
+      <div class="about-content">
+        <div>
+          <p id="aboutSong">
+            "Dilbar" is a song recorded by American singer-songwriter himesh rasmiya
+          </p>
+          <a class="download-song" href="./assets/Songs/Dilbar.mp3" id="download" download="Dilbar.mp3">
+            Download Song
+          </a>
+          
+        </div>
+        <div class="image-container">
+          <img src="./assets/Image/Dilbar.jpg" alt="song-banner" id="banner">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-header">
+        <h2 class="title">About Song !!</h2>
+      </div>
+      <div class="about-content">
+        <div>
+          <p id="aboutSong">
+            "KusuKusu" is a song recorded by American singer-songwriter himesh rasmiya
+          </p>
+          <a class="download-song" href="./assets/Songs/KusuKusu.mp3" id="download" download="KusuKusu.mp3">
+            Download Song
+          </a>
+          
+        </div>
+        <div class="image-container">
+          <img src="./assets/Image/KusuKusu.jpg" alt="song-banner" id="banner">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+  
+
+  <section class="contact" id="contact">
+    <h2 class="title">Connect with me on Social media</h2>
+    <div class="social-media">
+      <a href="https://instagram.com/spotifyindia?igshid=MzRlODBiNWFlZA==" target="_blank"><i class="fab fa-instagram"></i></a>
+
+      <a href="https://l.facebook.com/l.php?u=http%3A%2F%2Fspotify.com%2F&h=AT3qhVlgyDrhGdc24zdNMAcWa2PQ6au_tLhDuR23zCvxMKMOq-Rg4KKZsNzY6uIf0ZsZQ9XocYbJFXF3t05uvL_x6cNKRX1rNtQmBIMJqcZQrklqsFMlIQ_LFB8d7QT_XO_dT_8Ep9UEXUGtC1tdkg" target="_blank"><i class="fab fa-facebook"></i></a>
+
+      <a href="https://www.linkedin.com/company/spotify" target="_blank"><i class="fab fa-linkedin"></i></a>
+
+      <a href="https://twitter.com/Spotify?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="fab fa-twitter"></i></a>
+
+      <a href="https://github.com/spotify" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+
+    <footer class="footer">
+      <p>© Design by <a href="" target="_blank">HARSH KUMAR</a></p>
+      <p>Contributed by <a href="" target="_blank">SURAJ SINGH</a></p>
+    </footer>
+  </section>
+
+  <!-- Import JS File -->
+  <script src="./JS/script.js"></script>
+  <script src="./RegisterServiceWorker.js"></script>
+
+</body>
+
+</html>
